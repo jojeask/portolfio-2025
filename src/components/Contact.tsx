@@ -17,7 +17,7 @@ const Contact = () => {
             Let's <span className="text-gradient">Connect</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            [Replace with your contact message - e.g., "Interested in collaborating or have a project in mind? I'd love to hear from you!"]
+            Have an idea or project in mind? Drop me a message, <br /> I'd love to hear from you!
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 pt-4">

@@ -2,6 +2,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/u
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 interface ProjectDetailProps {
   isOpen: boolean;
@@ -10,6 +11,7 @@ interface ProjectDetailProps {
     title: string;
     description: string;
     image: string;
+    images?: string[];
     tags: string[];
     liveUrl?: string;
     githubUrl?: string;
@@ -32,13 +34,23 @@ const ProjectDetail = ({ isOpen, onClose, project }: ProjectDetailProps) => {
         </DialogHeader>
         
         <div className="space-y-6">
-          <div className="relative overflow-hidden rounded-lg aspect-video">
-            <img 
-              src={project.image} 
-              alt={project.title}
-              className="w-full h-full object-cover"
-            />
-          </div>
+          <Carousel className="w-full">
+            <CarouselContent>
+              {(project.images || [project.image]).map((img, index) => (
+                <CarouselItem key={index}>
+                  <div className="relative overflow-hidden rounded-lg aspect-video">
+                    <img 
+                      src={img} 
+                      alt={`${project.title} - Image ${index + 1}`}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious className="left-4" />
+            <CarouselNext className="right-4" />
+          </Carousel>
 
           <div className="space-y-4">
             <div>

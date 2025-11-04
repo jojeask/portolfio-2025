@@ -3,10 +3,9 @@ import { Mail, Github, Linkedin, Twitter } from "lucide-react";
 
 const Contact = () => {
   const socials = [
-    { icon: <Mail className="h-5 w-5" />, label: "Email", href: "mailto:your.email@example.com" },
-    { icon: <Github className="h-5 w-5" />, label: "GitHub", href: "https://github.com/yourusername" },
+    { icon: <Mail className="h-5 w-5" />, label: "Email", href: "mailto:jojeask@gmail.com" },
+    { icon: <Github className="h-5 w-5" />, label: "GitHub", href: "https://github.com/jojeask" },
     { icon: <Linkedin className="h-5 w-5" />, label: "LinkedIn", href: "https://linkedin.com/in/yourusername" },
-    { icon: <Twitter className="h-5 w-5" />, label: "Twitter", href: "https://twitter.com/yourusername" }
   ];
 
   return (

@@ -39,7 +39,7 @@ const Contact = () => {
 
           <div className="pt-8 border-t border-border/50">
             <p className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} [Your Name]. Built with React & Tailwind CSS
+              © {new Date().getFullYear()} Johan Asklund. Built with React & Tailwind CSS
             </p>
           </div>
         </div>

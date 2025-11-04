@@ -32,7 +32,7 @@ const Navigation = () => {
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="text-2xl font-bold"
           >
-            <span className="text-gradient">[YourName]</span>
+            <span className="text-gradient">Johan Asklund</span>
           </button>
 
           {/* Desktop Navigation */}

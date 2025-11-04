@@ -9,11 +9,15 @@ interface ProjectCardProps {
   tags: string[];
   liveUrl?: string;
   githubUrl?: string;
+  onClick?: () => void;
 }
 
-const ProjectCard = ({ title, description, image, tags, liveUrl, githubUrl }: ProjectCardProps) => {
+const ProjectCard = ({ title, description, image, tags, liveUrl, githubUrl, onClick }: ProjectCardProps) => {
   return (
-    <Card className="glass-card overflow-hidden group hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:-translate-y-1">
+    <Card 
+      className="glass-card overflow-hidden group hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:-translate-y-1 cursor-pointer"
+      onClick={onClick}
+    >
       <div className="relative overflow-hidden aspect-square">
         <img 
           src={image} 
@@ -28,6 +32,7 @@ const ProjectCard = ({ title, description, image, tags, liveUrl, githubUrl }: Pr
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 bg-primary rounded-full hover:bg-primary/80 transition-colors"
+                onClick={(e) => e.stopPropagation()}
               >
                 <ExternalLink className="h-5 w-5 text-primary-foreground" />
               </a>
@@ -38,6 +43,7 @@ const ProjectCard = ({ title, description, image, tags, liveUrl, githubUrl }: Pr
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-2 bg-secondary rounded-full hover:bg-secondary/80 transition-colors"
+                onClick={(e) => e.stopPropagation()}
               >
                 <Github className="h-5 w-5 text-secondary-foreground" />
               </a>

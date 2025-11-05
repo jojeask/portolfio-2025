@@ -9,7 +9,7 @@ const Contact = () => {
   ];
 
   return (
-    <section className="py-20 container mx-auto px-4">
+    <section id="contact" className="py-20 container mx-auto px-4">
       <div className="max-w-4xl mx-auto">
         <div className="glass-card p-12 text-center space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
           <h2 className="text-4xl md:text-5xl font-bold">

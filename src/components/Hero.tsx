@@ -6,6 +6,9 @@ const Hero = () => {
   const scrollToProjects = () => {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
   };
+  const scrollToContact = () => {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -23,13 +26,13 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 py-20 text-center">
         <div className="max-w-4xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-1000">
           <h1 className="text-5xl md:text-7xl font-bold">
-            <span className="text-gradient">Mobile Developer</span>
+            <span className="text-gradient">Crafting Seamless</span>
             <br />
-            <span className="text-foreground">& App Creator</span>
+            <span className="text-foreground">Mobile Experiences</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
-            [Replace with your introduction - e.g., "Crafting innovative mobile experiences that users love. Specialized in iOS and Android development."]
+            I build modern, user-friendly applicaitons for iOS, Android, and React Native – with a focus on performance, design, and user experience.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
@@ -44,9 +47,10 @@ const Hero = () => {
             <Button 
               size="lg" 
               variant="outline"
-              className="border-primary/50 hover:border-primary hover:bg-primary/10 transition-all duration-300"
+            className="border-primary/50 hover:border-primary hover:bg-primary/10 transition-all duration-300"
+            onClick={scrollToContact}
             >
-              [Contact Me]
+              Contact Me
             </Button>
           </div>
         </div>

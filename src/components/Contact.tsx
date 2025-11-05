@@ -5,7 +5,7 @@ const Contact = () => {
   const socials = [
     { icon: <Mail className="h-5 w-5" />, label: "Email", href: "mailto:jojeask@gmail.com" },
     { icon: <Github className="h-5 w-5" />, label: "GitHub", href: "https://github.com/jojeask" },
-    { icon: <Linkedin className="h-5 w-5" />, label: "LinkedIn", href: "https://linkedin.com/in/yourusername" },
+    { icon: <Linkedin className="h-5 w-5" />, label: "LinkedIn", href: "https://www.linkedin.com/in/johan-asklund-0898aa1a6/" },
   ];
 
   return (

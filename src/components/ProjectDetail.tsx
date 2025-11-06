@@ -36,14 +36,35 @@ const ProjectDetail = ({ isOpen, onClose, project }: ProjectDetailProps) => {
         <div className="space-y-6">
           <Carousel className="w-full">
             <CarouselContent>
-              {(project.images || [project.image]).map((img, index) => (
+              {(project.images || [project.image]).map((img, index, arr) => (
                 <CarouselItem key={index}>
-                  <div className="relative overflow-hidden rounded-lg aspect-video">
-                    <img 
-                      src={img} 
-                      alt={`${project.title} - Image ${index + 1}`}
-                      className="w-full h-full object-cover"
-                    />
+                  <div className="relative rounded-xl p-[2px] bg-gradient-to-r from-cyan-500/40 via-purple-500/40 to-fuchsia-500/40">
+                    <div
+                      className="relative overflow-hidden rounded-[10px] aspect-video bg-zinc-950/90"
+                      style={{
+                        backgroundImage:
+                          "linear-gradient(rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.06) 1px, transparent 1px)",
+                        backgroundSize: "24px 24px",
+                        backgroundPosition: "center",
+                      }}
+                    >
+                      <img
+                        src={img}
+                        alt={`${project.title} - Image ${index + 1}`}
+                        className="w-full h-full object-contain"
+                      />
+
+                      {/* corner accents */}
+                      <span className="pointer-events-none absolute left-3 top-3 h-4 w-6 border-l-2 border-t-2 border-cyan-400/60" />
+                      <span className="pointer-events-none absolute right-3 top-3 h-4 w-6 border-r-2 border-t-2 border-fuchsia-400/60" />
+                      <span className="pointer-events-none absolute left-3 bottom-3 h-4 w-6 border-l-2 border-b-2 border-cyan-400/60" />
+                      <span className="pointer-events-none absolute right-3 bottom-3 h-4 w-6 border-r-2 border-b-2 border-fuchsia-400/60" />
+
+                      {/* HUD index badge */}
+                      <div className="absolute right-3 top-3 rounded-md px-2 py-1 text-xs font-medium tracking-wider text-white/90 bg-zinc-900/70 backdrop-blur supports-[backdrop-filter]:bg-zinc-900/50 border border-white/10 shadow">
+                        {index + 1} / {arr.length}
+                      </div>
+                    </div>
                   </div>
                 </CarouselItem>
               ))}

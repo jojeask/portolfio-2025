@@ -1,22 +1,28 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Code2, Smartphone, Zap } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Monitor, Server, Palette, Settings } from "lucide-react";
 
 const About = () => {
   const skills = [
     {
-      icon: <Smartphone className="h-8 w-8 text-primary" />,
-      title: "Mobile Development",
-      description: "[Replace: Your mobile dev expertise - e.g., 'Expert in iOS and Android development with 5+ years of experience']"
+      icon: <Monitor className="h-8 w-8 text-primary" />,
+      title: "Frontend",
+      tags: ["React Native", "TypeScript", "Swift", "SwiftUI", "Kotlin", "Jetpack Compose"]
     },
     {
-      icon: <Code2 className="h-8 w-8 text-primary" />,
-      title: "Clean Code",
-      description: "[Replace: Your coding philosophy - e.g., 'Passionate about writing maintainable, scalable, and efficient code']"
+      icon: <Server className="h-8 w-8 text-primary" />,
+      title: "Backend",
+      tags: ["Firebase", "AI Integration"]
     },
     {
-      icon: <Zap className="h-8 w-8 text-primary" />,
-      title: "Performance",
-      description: "[Replace: Your performance focus - e.g., 'Optimizing apps for speed and seamless user experience']"
+      icon: <Palette className="h-8 w-8 text-primary" />,
+      title: "Design",
+      tags: ["UI/UX Design", "Figma"]
+    },
+    {
+      icon: <Settings className="h-8 w-8 text-primary" />,
+      title: "Tools & Workflow",
+      tags: ["GitHub", "Notion", "Trello"]
     }
   ];
 
@@ -35,15 +41,18 @@ const About = () => {
           </h2>
           <div className="max-w-3xl mx-auto space-y-6">
             <p className="text-xl text-muted-foreground">
-              [Replace with your bio - Tell your story: background, passion for mobile development, what drives you, your journey into app development]
+              Hey! I'm Johan, a 24 year old former after-school teacher who discovered a passion for mobile development. I'm currently studying iPhone and Android Development at Malmö Yrkeshögskola, where I've learned everything from UI/UX to frontend and backend.
             </p>
             <p className="text-lg text-muted-foreground">
-              [Replace with additional info - Your specializations, what you're currently working on, your approach to development]
+              I'm a self-driven learner who loves challenges and figuring things out on my own. When I'm not coding, you'll probably find me playing football or hiking somewhere in nature.
+            </p>
+            <p className="text-lg text-muted-foreground">
+              I'm excited to keep growing as a developer and build apps that make a real difference.
             </p>
           </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
           {skills.map((skill, index) => (
             <Card 
               key={index}
@@ -57,7 +66,17 @@ const About = () => {
                   </div>
                 </div>
                 <h3 className="text-xl font-bold">{skill.title}</h3>
-                <p className="text-muted-foreground">{skill.description}</p>
+                <div className="flex flex-wrap gap-2 justify-center">
+                  {skill.tags.map((tag, tagIndex) => (
+                    <Badge 
+                      key={tagIndex} 
+                      variant="secondary"
+                      className="bg-secondary/50 hover:bg-secondary border border-primary/20"
+                    >
+                      {tag}
+                    </Badge>
+                  ))}
+                </div>
               </CardContent>
             </Card>
           ))}

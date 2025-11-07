@@ -9,6 +9,9 @@ import mycrave1 from "@/assets/mycrave1.png";
 import mycrave2 from "@/assets/mycrave2.png";
 import mycrave3 from "@/assets/mycrave3.png";
 import mycrave4 from "@/assets/mycrave4.png";
+import mynews from "@/assets/mynews.png";
+import mywiki from "@/assets/mywiki.png";
+import myclass from "@/assets/myclass.png";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<any>(null);
@@ -23,7 +26,7 @@ const Projects = () => {
       tags: ["React Native", "TypeScript", "Expo", "API Calls"],
       /*liveUrl: "#",*/
       /*githubUrl: "#",*/
-      detailedDescription: "Papillon was my very first app project — a personal milestone where I brought my ideas to life using React Native and TypeScript. I wanted to create something meaningful: a simple and minimalist productivity app that could help people with busy lives stay organized without feeling overwhelmed.",
+      detailedDescription: "Papillon was my very first app project, a personal milestone where I brought my ideas to life using React Native and TypeScript. I wanted to create something meaningful: a simple and minimalist productivity app that could help people with busy lives stay organized without feeling overwhelmed.",
       features: [
         "Daily View – Organize your day with a clean, focused overview of today’s tasks and priorities.",
         "To-Do View – Add and manage tasks in a simple, distraction-free list designed for quick organization.",
@@ -48,20 +51,20 @@ const Projects = () => {
       /*technologies: ["Flutter", "Dart", "Firebase", "Provider"]*/
     },
     {
-      title: "[App Name 3]",
-      description: "[Brief description of your app - what problem it solves, key features, target audience. Replace this placeholder text with your actual app description.]",
-      image: appPlaceholder3,
-      images: [appPlaceholder3, appPlaceholder4, appPlaceholder1],
-      tags: ["Swift", "iOS", "Core Data"],
+      title: "MY Campus",
+      description: "MY Campus is an educational and collaboration platform built with Kotlin and Jetpack Compose, powered by Firebase for real-time data and scalability. Designed with clean MVVM architecture, the app enables students and educators to stay connected through features like a live newsfeed, collaborative wiki documentation, and efficient class management tools.",
+      image: mynews,
+      images: [mynews, mywiki, myclass],
+      tags: ["Kotlin", "Jetpack Compose", "Firebase", "MVVM"],
       /*liveUrl: "#",*/
       /*githubUrl: "#",*/
-      detailedDescription: "[Add more detailed information about this project here - the development process, challenges faced, solutions implemented, etc.]",
+      detailedDescription: "MY Campus was developed as a collaborative educational platform using Kotlin, Jetpack Compose, and Firebase as the real-time backend. The project focused on creating a scalable, data-driven app architecture built on clean MVVM patterns, ensuring maintainability and responsive UI updates.\n\nMy main responsibilities included implementing user authentication with validation, developing the profile page with settings, and contributing to various smaller improvements across the app. Working on MY Campus gave me valuable experience in integrating Firebase services, managing state within Jetpack Compose, and ensuring a seamless user experience across multiple features.",
       features: [
-        "[Feature 1 - describe a key feature]",
-        "[Feature 2 - describe another feature]",
-        "[Feature 3 - describe another feature]"
+        "Live Newsfeed - Stay connected with real-time updates and announcements.",
+        "Collaborative Wiki - Create and share documentation with classmates.",
+        "Class Management - Efficient tools for organizing and managing educational content."
       ],
-      /*technologies: ["Swift", "SwiftUI", "Core Data", "Combine"]*/
+      /*technologies: ["Kotlin", "Jetpack Compose", "Firebase", "MVVM"]*/
     },
     {
       title: "[App Name 4]",

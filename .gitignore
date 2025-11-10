@@ -8,15 +8,10 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+dist
 dist-ssr
 *.local
 
-# Ensure GitHub Pages built artifacts at repo root are committed
-#! Negation patterns are defensive in case of future ignores
-!index.html
-!assets/
-!*.js
-!*.css
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

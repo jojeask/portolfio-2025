@@ -4,14 +4,13 @@ import ProjectDetail from "./ProjectDetail";
 import appPlaceholder1 from "@/assets/app-placeholder-1.jpg";
 import appPlaceholder2 from "@/assets/app-placeholder-2.jpg";
 import appPlaceholder3 from "@/assets/app-placeholder-3.jpg";
-import appPlaceholder4 from "@/assets/app-placeholder-4.jpg";
 import mycrave1 from "@/assets/mycrave1.png";
 import mycrave2 from "@/assets/mycrave2.png";
 import mycrave3 from "@/assets/mycrave3.png";
 import mycrave4 from "@/assets/mycrave4.png";
-import mynews from "@/assets/mynews.png";
-import mywiki from "@/assets/mywiki.png";
-import myclass from "@/assets/myclass.png";
+import nexuhubnews from "@/assets/nexuhubnews.png";
+import nexuhubwiki from "@/assets/nexuhubwiki.png";
+import nexuhubclass from "@/assets/nexuhubclass.png";
 import papillonday from "@/assets/papillonday.png";
 import papillonmonth from "@/assets/papillonmonth.png";
 import papillonweek from "@/assets/papillonweek.png";
@@ -57,8 +56,8 @@ const Projects = () => {
     {
       title: "Nexuhub Campus",
       description: "Nexuhub Campus is an educational and collaboration platform built with Kotlin and Jetpack Compose, powered by Firebase for real-time data and scalability. Designed with clean MVVM architecture, the app enables students and educators to stay connected through features like a live newsfeed, collaborative wiki documentation, and efficient class management tools.",
-      image: mynews,
-      images: [mynews, mywiki, myclass],
+      image: nexuhubnews,
+      images: [nexuhubnews, nexuhubwiki, nexuhubclass],
       tags: ["Kotlin", "Jetpack Compose", "Firebase", "MVVM"],
       /*liveUrl: "#",*/
       /*githubUrl: "#",*/
@@ -69,22 +68,6 @@ const Projects = () => {
         "Class Management - Efficient tools for organizing and managing educational content."
       ],
       /*technologies: ["Kotlin", "Jetpack Compose", "Firebase", "MVVM"]*/
-    },
-    {
-      title: "[App Name 4]",
-      description: "[Brief description of your app - what problem it solves, key features, target audience. Replace this placeholder text with your actual app description.]",
-      image: appPlaceholder4,
-      images: [appPlaceholder4, appPlaceholder2, appPlaceholder3],
-      tags: ["React Native", "Node.js", "MongoDB"],
-      /*liveUrl: "#",*/
-      /*githubUrl: "#",*/
-      detailedDescription: "[Add more detailed information about this project here - the development process, challenges faced, solutions implemented, etc.]",
-      features: [
-        "[Feature 1 - describe a key feature]",
-        "[Feature 2 - describe another feature]",
-        "[Feature 3 - describe another feature]"
-      ],
-      /*technologies: ["React Native", "Node.js", "Express", "MongoDB"]*/
     }
   ];
 

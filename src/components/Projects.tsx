@@ -88,11 +88,11 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div 
               key={index}
-              className="animate-in fade-in slide-in-from-bottom-4"
+              className="animate-in fade-in slide-in-from-bottom-4 h-full"
               style={{ animationDelay: `${index * 150}ms`, animationFillMode: 'backwards' }}
             >
               <ProjectCard {...project} onClick={() => handleProjectClick(project)} />

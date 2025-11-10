@@ -15,7 +15,7 @@ interface ProjectCardProps {
 const ProjectCard = ({ title, description, image, tags, liveUrl, githubUrl, onClick }: ProjectCardProps) => {
   return (
     <Card 
-      className="glass-card overflow-hidden group hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:-translate-y-1 cursor-pointer"
+      className="glass-card overflow-hidden group hover:shadow-lg hover:shadow-primary/20 transition-all duration-300 hover:-translate-y-1 cursor-pointer h-full flex flex-col"
       onClick={onClick}
     >
       <div className="relative overflow-hidden aspect-square">

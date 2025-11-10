@@ -12,6 +12,10 @@ import mycrave4 from "@/assets/mycrave4.png";
 import mynews from "@/assets/mynews.png";
 import mywiki from "@/assets/mywiki.png";
 import myclass from "@/assets/myclass.png";
+import papillonday from "@/assets/papillonday.png";
+import papillonmonth from "@/assets/papillonmonth.png";
+import papillonweek from "@/assets/papillonweek.png";
+import papillontodo from "@/assets/papillontoday.png";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<any>(null);
@@ -21,8 +25,8 @@ const Projects = () => {
     {
       title: "Papillon",
       description: "Papillon is a simple and minimalist calendar and to-do app designed to help users stay organized and focused. Built for people with busy lives, it provides a clean and distraction-free way to plan tasks and manage daily routines efficiently. My task in this project was to create the ToDo View and funcitonality.",
-      image: appPlaceholder1,
-      images: [appPlaceholder1, appPlaceholder2, appPlaceholder3],
+      image: papillonday,
+      images: [papillonday, papillonweek, papillonmonth, papillontodo],
       tags: ["React Native", "TypeScript", "Expo", "API Calls"],
       /*liveUrl: "#",*/
       /*githubUrl: "#",*/

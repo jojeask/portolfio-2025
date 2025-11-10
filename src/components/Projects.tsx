@@ -68,6 +68,18 @@ const Projects = () => {
         "Class Management - Efficient tools for organizing and managing educational content."
       ],
       /*technologies: ["Kotlin", "Jetpack Compose", "Firebase", "MVVM"]*/
+    },
+    {
+    title: "Upcoming Project",
+      description: "",
+      image: appPlaceholder1,
+      images: [appPlaceholder1, appPlaceholder2, appPlaceholder3],
+      tags: ["", "", "", ""],
+      /*liveUrl: "#",*/
+      /*githubUrl: "#",*/
+      detailedDescription: "",
+      features: [],
+      /*technologies: ["React Native", "TypeScript", "Expo", "API Calls"]*/
     }
   ];
 

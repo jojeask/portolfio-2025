@@ -15,7 +15,7 @@ import myclass from "@/assets/myclass.png";
 import papillonday from "@/assets/papillonday.png";
 import papillonmonth from "@/assets/papillonmonth.png";
 import papillonweek from "@/assets/papillonweek.png";
-import papillontodo from "@/assets/papillontoday.png";
+import papillontodo from "@/assets/papillontodo.png";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<any>(null);
@@ -55,14 +55,14 @@ const Projects = () => {
       /*technologies: ["Flutter", "Dart", "Firebase", "Provider"]*/
     },
     {
-      title: "MY Campus",
-      description: "MY Campus is an educational and collaboration platform built with Kotlin and Jetpack Compose, powered by Firebase for real-time data and scalability. Designed with clean MVVM architecture, the app enables students and educators to stay connected through features like a live newsfeed, collaborative wiki documentation, and efficient class management tools.",
+      title: "Nexuhub Campus",
+      description: "Nexuhub Campus is an educational and collaboration platform built with Kotlin and Jetpack Compose, powered by Firebase for real-time data and scalability. Designed with clean MVVM architecture, the app enables students and educators to stay connected through features like a live newsfeed, collaborative wiki documentation, and efficient class management tools.",
       image: mynews,
       images: [mynews, mywiki, myclass],
       tags: ["Kotlin", "Jetpack Compose", "Firebase", "MVVM"],
       /*liveUrl: "#",*/
       /*githubUrl: "#",*/
-      detailedDescription: "MY Campus was developed as a collaborative educational platform using Kotlin, Jetpack Compose, and Firebase as the real-time backend. The project focused on creating a scalable, data-driven app architecture built on clean MVVM patterns, ensuring maintainability and responsive UI updates.\n\nMy main responsibilities included implementing user authentication with validation, developing the profile page with settings, and contributing to various smaller improvements across the app. Working on MY Campus gave me valuable experience in integrating Firebase services, managing state within Jetpack Compose, and ensuring a seamless user experience across multiple features.",
+      detailedDescription: "Nexuhub Campus was developed as a collaborative educational platform using Kotlin, Jetpack Compose, and Firebase as the real-time backend. The project focused on creating a scalable, data-driven app architecture built on clean MVVM patterns, ensuring maintainability and responsive UI updates.\n\nMy main responsibilities included implementing user authentication with validation, developing the profile page with settings, and contributing to various smaller improvements across the app. Working on Nexuhub Campus gave me valuable experience in integrating Firebase services, managing state within Jetpack Compose, and ensuring a seamless user experience across multiple features.",
       features: [
         "Live Newsfeed - Stay connected with real-time updates and announcements.",
         "Collaborative Wiki - Create and share documentation with classmates.",
